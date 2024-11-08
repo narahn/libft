@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:55:31 by narah             #+#    #+#             */
-/*   Updated: 2024/11/04 18:43:50 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/06 22:01:16 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,20 +60,22 @@ char    **ft_split(const char *s, char c)
     i = 0;
     if (s == NULL)
         return NULL;
-    result = ft_calloc(count_word(s, c) + 1, sizeof(char *));
+    result = (char **)ft_calloc(count_word(s, c) + 1, sizeof(char *));
     if (result == NULL)
         return NULL;
     while (*s != '\0')
     {
-        while (*s == c)
+        while (*s == c && *s != '\0')
             s++;
+        if (*s == '\0')
+            break;
         start = s;
         while (*s != '\0' && *s != c)
             s++;
-        result[i] = ft_strdup(start);
+        result[i] = ft_substr(start, 0, s - start );
         if (result[i] == NULL)
             return(free_res(result));
-        result[i][s - start] = '\0';
+        // result[i][s - start] = '\0';
         i++;
     }
     result[i] = NULL;

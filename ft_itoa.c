@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 03:57:31 by narah             #+#    #+#             */
-/*   Updated: 2024/11/04 07:30:33 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/05 01:23:52 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ static int num_len(int n)
     i = 0;
     if (n <= 0)
        i++;
-    n = -n;
-    while (n > 0)
+    while (n != 0)
     {
         n /= 10;
         i++;
@@ -77,10 +76,10 @@ char    *ft_itoa (int n)
     return (ft_strrev(num));
 }
 
-int main ()
-{
-    int n = -2456;
-    char *result;
-    result = ft_itoa(n);
-    printf ("%s", result);
-}
+// int main ()
+// {
+//     int n = -2456;
+//     char *result;
+//     result = ft_itoa(n);
+//     printf ("%s", result);
+// }

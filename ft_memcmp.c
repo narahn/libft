@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:55:58 by narah             #+#    #+#             */
-/*   Updated: 2024/11/08 23:08:01 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/04 18:49:04 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,6 @@
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
     size_t i;
-
-    
-    
 
     i = 0;
     unsigned char *x = (unsigned char *)s1;

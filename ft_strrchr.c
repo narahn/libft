@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:33:59 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:34:00 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/06 11:09:39 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strrchr(const char *s, int c)
     if (s[i] == (char)c)
         return (char *) &s[i];
     i--;
-    while (i >= 0)
+    while(i >= 0)
     {
         if (s[i] == (char)c)
             return  (char *) &s[i];
