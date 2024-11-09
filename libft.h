@@ -5,6 +5,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+#include <fcntl.h>
 
 int     ft_atoi(const char *str);
 void    ft_bzero(void *s, size_t n);
@@ -35,5 +36,8 @@ int     ft_toupper(int c);
 char    **ft_split(const char *s, char c);
 char    *ft_itoa (int n);
 char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void    ft_striteri (char *s,void (*f)(unsigned int, char *));
+void    ft_putchar_fd(char c, int fd);
+void    ft_putstr_fd(char *s, int fd);
 
 #endif
