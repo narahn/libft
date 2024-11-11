@@ -10,23 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
 int	ft_isalnum(int c)
 {
-    if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9'))
-        return 1;
-    return 0;
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0'
+			&& c <= '9'))
+		return (1);
+	return (0);
 }
 
 /*int main ()
 {
-    char c = ' ';
+	char c = ' ';
 
-    int result = ft_isalnum(c);
+	int result = ft_isalnum(c);
 
-    printf ("%d", result);
+	printf ("%d", result);
 
-    return 0;
+	return (0);
 }*/

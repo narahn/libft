@@ -10,23 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
 int	ft_isdigit(int c)
 {
-    if (c >= '0' && c <= '9')
-        return 1;
-    return 0;
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
 
 /*int main ()
 {
-    char c = 'a';
+	char c = 'a';
 
-    int result = ft_isdigit(c);
+	int result = ft_isdigit(c);
 
-    printf ("%d", result);
+	printf ("%d", result);
 
-    return 0;
+	return (0);
 }*/

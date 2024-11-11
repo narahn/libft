@@ -10,36 +10,35 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
 // static char ft(unsigned int i, char c)
 // {
 //     if (i % 2 == 0)
-//         return ft_toupper(c);
+//         return (ft_toupper(c));
 //     return (c);
 // }
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    unsigned int len;
-    char *s1;
-    unsigned int i;
-    
-    if (s == NULL || f == NULL)
-        return NULL;
-    len = ft_strlen(s);
-    s1 = (char *)malloc(len + 1);
-    if (s1 == NULL)
-        return NULL;
-    i = 0;
-    while (i < len)
-    {
-        s1[i] = f(i, s[i]);
-        i++;
-    }
-    s1[len] = '\0';
-    return s1;
+	unsigned int	len;
+	char			*s1;
+	unsigned int	i;
+
+	if (s == NULL || f == NULL)
+		return (NULL);
+	len = ft_strlen(s);
+	s1 = (char *)malloc(len + 1);
+	if (s1 == NULL)
+		return (NULL);
+	i = 0;
+	while (i < len)
+	{
+		s1[i] = f(i, s[i]);
+		i++;
+	}
+	s1[len] = '\0';
+	return (s1);
 }
 
 // int main()
@@ -48,4 +47,4 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 //     char *s = "codingchool";
 //     result = ft_strmapi(s, ft);
 //     printf("%s", result);
-// } 
+// }

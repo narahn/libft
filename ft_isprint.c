@@ -10,23 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
 int	ft_ispint(int c)
 {
-    if (c >= 32 && c <= 126)
-        return 1;
-    return 0;
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }
 
 /*int main ()
 {
-    char c = '!';
+	char c = '!';
 
-    int result = ft_ispint(c);
+	int result = ft_ispint(c);
 
-    printf ("%d", result);
+	printf ("%d", result);
 
-    return 0;
+	return (0);
 }*/

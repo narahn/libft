@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
 // void	*ft_memset(void *b, int c, size_t len)
@@ -23,7 +22,7 @@
 //             ptr++;
 //         len--;
 //     }
-//     return b;
+//     return (b);
 // }
 
 // void	ft_bzero(void *s, size_t n)
@@ -40,13 +39,13 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-    void *s;
+	void	*s;
 
-    s = malloc(count * size);
-    if (s == NULL)
-        return (NULL);
-    ft_memset (s, 0, count * size);
-    return (s);
+	s = malloc(count * size);
+	if (s == NULL)
+		return (NULL);
+	ft_memset(s, 0, count * size);
+	return (s);
 }
 
 // int main ()

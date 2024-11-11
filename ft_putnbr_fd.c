@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{
-		write (fd, "-2147483648", 11);
+		write(fd, "-2147483648", 11);
 	}
 	else if (n < 0)
 	{
@@ -31,7 +30,7 @@ void ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 	else
-		 ft_putchar_fd(n + 48, fd);
+		ft_putchar_fd(n + 48, fd);
 }
 
 // int main ()

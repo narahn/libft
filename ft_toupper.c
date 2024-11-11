@@ -10,21 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
 int	ft_toupper(int c)
 {
-    if (c >= 'a' && c <= 'z')
-        return c-32;
-    return c;
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }
 
 /*int main ()
 {
-    char c = 'f';
+	char c = 'f';
 
-    printf ("%c", ft_toupper(c));
+	printf ("%c", ft_toupper(c));
 
-    return 0;
+	return (0);
 }*/

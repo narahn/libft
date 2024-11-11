@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
 // size_t	ft_strlen(const char *s)
@@ -20,7 +19,7 @@
 //     i = 0;
 //     while (s[i] != '\0')
 //         i++;
-//     return i;
+//     return (i);
 // }
 
 // char	*ft_strdup(const char *s1)
@@ -31,7 +30,7 @@
 //     i = 0;
 //     s2 = (char *)malloc(ft_strlen(s1) + 1);
 //     if (s2 == NULL)
-//         return NULL;
+//         return (NULL);
 //     while (s1[i] != '\0')
 //     {
 //         s2[i] = s1[i];
@@ -41,30 +40,30 @@
 //     return (s2);
 // }
 
-char    *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    char *s1;
-    size_t i;
-    size_t s_len;
-    
-    i = 0;
-    if (s == NULL)
-        return (NULL);
-    s_len = ft_strlen(s);
-    if (start > s_len)
-        return(ft_strdup(""));
-    if (start + len > s_len)
-        len = s_len - start;
-    s1 = (char *)malloc(len + 1);
-    if (s1 == NULL)
-        return (NULL);
-    while (i < len && s[start + i])
-    {
-        s1[i] = s[start + i];
-        i++;
-    }
-    s1[i] = '\0';
-    return (s1);
+	char	*s1;
+	size_t	i;
+	size_t	s_len;
+
+	i = 0;
+	if (s == NULL)
+		return (NULL);
+	s_len = ft_strlen(s);
+	if (start > s_len)
+		return (ft_strdup(""));
+	if (start + len > s_len)
+		len = s_len - start;
+	s1 = (char *)malloc(len + 1);
+	if (s1 == NULL)
+		return (NULL);
+	while (i < len && s[start + i])
+	{
+		s1[i] = s[start + i];
+		i++;
+	}
+	s1[i] = '\0';
+	return (s1);
 }
 
 // int main ()
