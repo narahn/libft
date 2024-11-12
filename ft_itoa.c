@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fahosni <fahosni@student.42.fr>            +#+  +:+       +#+        */
+/*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 03:57:31 by narah             #+#    #+#             */
-/*   Updated: 2024/11/11 03:47:00 by fahosni          ###   ########.fr       */
+/*   Updated: 2024/11/12 14:54:08 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,11 +74,3 @@ char	*ft_itoa(int n)
 	num[lg] = '\0';
 	return (ft_strrev(num));
 }
-
-// int main ()
-// {
-//     int n = -2456;
-//     char *result;
-//     result = ft_itoa(n);
-//     printf ("%s", result);
-// }

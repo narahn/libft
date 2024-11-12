@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:56:30 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:56:31 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:53:41 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-/*int main ()
-{
-	char c = ' ';
-
-	int result = ft_isalnum(c);
-
-	printf ("%d", result);
-
-	return (0);
-}*/

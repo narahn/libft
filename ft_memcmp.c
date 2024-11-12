@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:55:58 by narah             #+#    #+#             */
-/*   Updated: 2024/11/04 18:49:04 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:55:05 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main ()
-// {
-//     int s1[20] = {253, 2163, 435, 87};
-//     int s2[20] = {253, 21, 435, 87};
-//     int result = ft_memcmp (s1, s2, 5);
-//     printf ("%d", result);
-// }

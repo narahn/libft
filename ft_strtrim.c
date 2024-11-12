@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:33:51 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:33:52 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:57:28 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,3 @@ char	*ft_strtrim(char const *s, char const *set)
 		end--;
 	return (ft_substr(s, start, end - start));
 }
-
-// int main ()
-// {
-//     char *result;
-//     char *s = "lorem \n ipsum \t dolor \n sit \t amet";
-//     char *set = " ";
-//     result = ft_strtrim(s, set);
-//     printf ("%s", result);
-// }

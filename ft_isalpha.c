@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:56:24 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:56:25 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:53:46 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
-/*int main ()
-{
-	char c = '1';
-
-	int result = ft_isalpha(c);
-
-	printf("%d", result);
-
-	return (0);
-}*/

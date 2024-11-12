@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:34:14 by narah             #+#    #+#             */
-/*   Updated: 2024/11/05 00:59:52 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:57:07 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (0);
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-
-// int main ()
-// {
-//     char *s1 = "helom";
-//     char *s2 = "helo";
-//     int e =  ft_strncmp(s1, s2, 4);
-
-//     printf ("%d",e);
-// }

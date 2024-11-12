@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:55:52 by narah             #+#    #+#             */
-/*   Updated: 2024/11/06 23:00:38 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:55:10 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-// int main ()
-// {
-//     char *result;
-//     char s[18] = "codingschool";
-//     result = ft_memcpy (s + 5, s, 7);
-//     printf ("%s", result);
-// }

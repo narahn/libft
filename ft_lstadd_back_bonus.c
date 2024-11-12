@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fahosni <fahosni@student.42.fr>            +#+  +:+       +#+        */
+/*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 14:41:31 by fahosni           #+#    #+#             */
-/*   Updated: 2024/11/12 14:41:32 by fahosni          ###   ########.fr       */
+/*   Updated: 2024/11/12 14:54:14 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,25 +30,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	current->next = new;
 }
-// int main(void)
-// {
-//     t_list *head = NULL;
-
-//     ft_lstadd_back(&head, ft_lstnew("cooding"));
-//     ft_lstadd_back(&head, ft_lstnew("School"));
-//     ft_lstadd_back(&head, ft_lstnew("1337"));
-//     t_list *current = head;
-//     while (current != NULL)
-//     {
-//         printf("%s\n", (char *)current->content);
-//         current = current->next;
-//     }
-//     current = head;
-//     while (current != NULL)
-//     {
-//         t_list *next = current->next;
-//         free(current);
-//         current = next;
-//     }
-//     return (0);
-// }

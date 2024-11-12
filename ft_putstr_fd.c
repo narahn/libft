@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 07:12:31 by narah             #+#    #+#             */
-/*   Updated: 2024/11/11 03:16:01 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:55:41 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,20 +25,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-
-// int main ()
-// {
-//     int fd = open("newfile", O_CREAT | O_RDWR ,0777);
-//     printf("%d\n", fd);
-//     ft_putchar_fd ('H', fd);
-//     ft_putchar_fd ('E', fd);
-//     ft_putchar_fd  ('L', fd);
-//     ft_putchar_fd ('L', fd);
-//     ft_putchar_fd ('o', fd);
-//     fd = open("newfile", O_APPEND | O_RDWR, 0777);
-//     ft_putstr_fd ("623849", fd);
-//     fd = open("newfile", O_APPEND | O_RDWR, 0777);
-//     printf("%d", fd);
-//     ft_putchar_fd('m', fd);
-//     close(fd);
-// }

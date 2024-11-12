@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:55:23 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:55:24 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:55:53 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-
-// int main ()
-// {
-//     char *s;
-//     char *tt;
-
-//     tt = strchr (NULL, '\0');
-//     s = ft_strchr (NULL, '\0');
-
-//     printf ("---%s---                 --%s---\n", s, tt);
-
-// }

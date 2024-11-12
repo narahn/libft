@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:34:28 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:34:29 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:56:42 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (strlen(src));
 }
-
-// int main ()
-// {
-//     char dst [8];
-//     const char *src = "narah";
-
-//      size_t result = ft_strlcpy(dst, src, sizeof(dst));
-
-//      printf ("%s\n", dst);
-//      printf ("%zu", result);
-
-//      return (0);
-// }

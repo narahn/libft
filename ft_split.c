@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fahosni <fahosni@student.42.fr>            +#+  +:+       +#+        */
+/*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:55:31 by narah             #+#    #+#             */
-/*   Updated: 2024/11/11 03:45:11 by fahosni          ###   ########.fr       */
+/*   Updated: 2024/11/12 14:55:48 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,16 +77,3 @@ char	**ft_split(const char *s, char c)
 	result[i] = NULL;
 	return (result);
 }
-
-// int main(void)
-// {
-//     char *s = "   test1   testtt4   test3";
-//     char c = ' ';
-//     char **result;
-//     result = ft_split(s, c);
-// 	for(int i = 0; result[i] != NULL ; i++)
-// 	{
-//  		printf("%s\n", result[i]);
-// 	}
-// 	return (0);
-// }

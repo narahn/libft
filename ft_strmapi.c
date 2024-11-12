@@ -6,18 +6,11 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 18:22:05 by narah             #+#    #+#             */
-/*   Updated: 2024/11/09 05:45:33 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:57:02 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// static char ft(unsigned int i, char c)
-// {
-//     if (i % 2 == 0)
-//         return (ft_toupper(c));
-//     return (c);
-// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -40,11 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	s1[len] = '\0';
 	return (s1);
 }
-
-// int main()
-// {
-//     char *result;
-//     char *s = "codingchool";
-//     result = ft_strmapi(s, ft);
-//     printf("%s", result);
-// }

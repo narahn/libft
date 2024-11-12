@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 04:47:38 by narah             #+#    #+#             */
-/*   Updated: 2024/11/09 06:59:58 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:56:04 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
-// int main ()
-// {
-//     char *s = "codingschool";
-//     ft_striteri(s, ft);
-//     printf ("%s", s);
-// }

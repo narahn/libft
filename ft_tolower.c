@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:33:40 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:33:41 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:57:53 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-
-/*int main ()
-{
-	char c = 'C';
-
-	printf ("%c", ft_tolower(c));
-
-	return (0);
-}*/

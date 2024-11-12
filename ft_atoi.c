@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fahosni <fahosni@student.42.fr>            +#+  +:+       +#+        */
+/*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 03:47:04 by fahosni           #+#    #+#             */
-/*   Updated: 2024/11/11 03:47:05 by fahosni          ###   ########.fr       */
+/*   Updated: 2024/11/12 14:53:14 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (j * sign);
 }
-/*int main ()
-{
-	char str[50] = "        -65337kd";
-	printf("%d\n", ft_atoi(str));
-}*/

@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:34:21 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:34:22 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:56:46 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-/*int main ()
-{
-	printf ("%zu", ft_strlen("nara"));
-
-	return (0);
-}*/

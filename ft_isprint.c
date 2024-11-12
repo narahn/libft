@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:56:09 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:56:10 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:54:04 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,3 @@ int	ft_ispint(int c)
 		return (1);
 	return (0);
 }
-
-/*int main ()
-{
-	char c = '!';
-
-	int result = ft_ispint(c);
-
-	printf ("%d", result);
-
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:55:17 by narah             #+#    #+#             */
-/*   Updated: 2024/11/03 21:55:18 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 14:55:58 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,3 @@ char	*ft_strdup(const char *s1)
 	s2[i] = '\0';
 	return (s2);
 }
-
-// int main ()
-// {
-//     char *result = NULL;
-//     printf ("%s\n", result);
-//     const char *str = "coding school";
-//     result = ft_strdup (str);
-//     printf ("%s\n", result);
-// }
