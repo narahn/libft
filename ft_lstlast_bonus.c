@@ -1,48 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/11 00:48:11 by narah             #+#    #+#             */
-/*   Updated: 2024/11/12 14:09:29 by narah            ###   ########.fr       */
+/*   Created: 2024/11/11 03:10:33 by narah             #+#    #+#             */
+/*   Updated: 2024/11/11 07:15:29 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+# include "libft.h"
+
+t_list *ft_lstlast(t_list *lst)
 {
-	int	count;
-
-	count = 0;
-
-	while (lst)
-	{
-		count++;
-		lst = lst->next;
-	}
-	return (count);
+     if (lst == NULL)
+        return NULL;
+    while (lst->next != NULL)
+    {
+        lst = lst->next;
+    }
+    return lst;
 }
-
-// int main ()
+//  int main ()
 // {
-//     t_list *node = NULL;
 //     t_list *node1 = ft_lstnew("coding");
 //     t_list *node2 = ft_lstnew("school");
 //     t_list *node3 = ft_lstnew("1337");
 //     node1->next = node2;
 //     node2->next = node3;
-//     node3->next = NULL;
-//     int size = ft_lstsize(node1);
-//     printf("%d\n", size);
-//     ft_lstadd_front(&node1, node);
-//     ft_lstadd_front(&node1, node);
-//     t_list *result = node1;
-//     while (result)
-//     {
-//     printf("%s\n", (char *)result->content);
-//     result = result->next;
-//     }
+//     t_list *last_node = ft_lstlast(node1);
+//     printf("%s",(char *)last_node->content);
 // }
