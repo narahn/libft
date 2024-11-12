@@ -10,20 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
-void ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-    t_list *current;
-    
-    if (lst == NULL || del == NULL)
-        return;
-    while (*lst != NULL)
-    {
-        current = *lst;
-        *lst = current->next;
-        ft_lstdelone(current, del);
-    }
+	t_list	*current;
+
+	if (lst == NULL || del == NULL)
+		return ;
+	while (*lst != NULL)
+	{
+		current = *lst;
+		*lst = current->next;
+		ft_lstdelone(current, del);
+	}
 }
 
 // int main(void)
@@ -46,5 +46,5 @@ void ft_lstclear(t_list **lst, void (*del)(void*))
 //     {
 //         printf("\n");
 //     }
-//     return 0;
+//     return (0);
 // }
