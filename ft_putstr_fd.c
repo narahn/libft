@@ -6,7 +6,7 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 07:12:31 by narah             #+#    #+#             */
-/*   Updated: 2024/11/12 14:55:41 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 15:56:29 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,13 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if (s == NULL || fd < 0)
-		return ;
-	while (s[i] != '\0')
+	if (fd > 0)
 	{
-		write(fd, &s[i], 1);
-		i++;
-	}
+		if (s == NULL || fd < 0)
+			return ;
+		while (s[i] != '\0')
+		{
+			write(fd, &s[i], 1);
+			i++;
+		}
 }

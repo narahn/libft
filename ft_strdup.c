@@ -6,21 +6,11 @@
 /*   By: narah <narah@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:55:17 by narah             #+#    #+#             */
-/*   Updated: 2024/11/12 14:55:58 by narah            ###   ########.fr       */
+/*   Updated: 2024/11/12 15:58:09 by narah            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//     size_t	ft_strlen(const char *s)
-// {
-//     size_t  i;
-
-//     i = 0;
-//     while (s[i] != '\0')
-//         i++;
-//     return (i);
-// }
 
 char	*ft_strdup(const char *s1)
 {
